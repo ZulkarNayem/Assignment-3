@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+
+    <!-- sora google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- tailwind and daisyUI cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/07de553b95.js" crossorigin="anonymous"></script>
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar section -->
+    <nav class="flex items-center justify-between px-4 py-4 mx-auto md:px-8">
+        <div class="flex items-center space-x-2">
+            <!-- for mobile -->
+            <img src="c2-assets/logo-header-sm.png" alt="" class="md:hidden">
+
+            <!-- for desktop -->
+            <img src="c2-assets/logo-header.png" alt="" class="hidden md:block">
+        </div>
+
+        <button class="md:hidden btn btn-ghost">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="hidden md:flex items-center space-x-8 text-xl">
+            <li><a href="" class="hover:text-[#179800]">Product</a></li>
+            <li><a href="" class="hover:text-[#179800]">Services</a></li>
+            <li><a href="" class="hover:text-[#179800]">Contact us</a></li>
+        </ul>
+
+        <div class="hidden md:flex items-center space-x-4">
+            <button class="btn btn-ghost btn-sm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-ghost btn-sm">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <a href="" class="btn border-[#179800] text-black btn-sm">Login</a>
+            <a href="" class="btn bg-[#179800] btn-sm text-white">Register</a>
+        </div>
+    </nav>
+</body>
+</html>
