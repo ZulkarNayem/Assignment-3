@@ -24,6 +24,22 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+        }
+
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
     </style>
 </head>
 
@@ -75,7 +91,7 @@
         </p>
 
         <div class="mt-8">
-            <img src="c2-assets/hero-vegetables.png" alt="" class="mx-auto">
+            <img src="c2-assets/hero-vegetables.png" alt="" class="mx-auto float-animation">
         </div>
     </section>
 
@@ -131,12 +147,14 @@
             <!-- discount banner -->
             <div class="relative bg-gradient-to-br from-[#53DB3A] rounded-xl">
                 <h1 class="text-3xl lg:text-4xl font-bold text-white pt-6 lg:pt-12 pl-6">30% off</h1>
-                <p class="text-xs lg:text-sm py-2 w-full lg:w-2/3 mt-4 pl-6">Discover a world of treats, toys, and essentials handpicked for</p>
+                <p class="text-xs lg:text-sm py-2 w-full lg:w-2/3 mt-4 pl-6">Discover a world of treats, toys, and
+                    essentials handpicked for</p>
                 <button class="btn text-xl  font-medium bg-white px-6 lg:px-10 ml-6 mt-6 mb-48">Buy Now</button>
                 <div>
-                    <img src="c2-assets/vegetable-offer.png" alt="" class="absolute bottom-0 right-0 w-48 h-48 lg:w-72 lg:h-72 md:w-40 md:h-40 object-cover">
+                    <img src="c2-assets/vegetable-offer.png" alt=""
+                        class="absolute bottom-0 right-0 w-48 h-48 lg:w-72 lg:h-72 md:w-40 md:h-40 object-cover">
                 </div>
-             </div>
+            </div>
 
             <!-- grid products -->
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 lg:w-3/5">
@@ -259,7 +277,7 @@
     <section class="py-24 mx-auto">
         <h2 class="text-3xl text-[#179800] font-bold mx-6 md:mx-16 mb-10 mt-20">Arrival & Offers</h2>
         <div class="flex flex-col lg:flex-row mx-auto px-4 lg:px-16 gap-6">
-            
+
             <!-- large card -->
             <div class="flex justify-between px-4 bg-[#115414] rounded-3xl h-68 pt-12 lg:w-3/5 lg:pr-16 lg:pl-8">
                 <div class="">
@@ -290,11 +308,14 @@
     <section>
         <div class="flex flex-col md:flex-row bg-stone-200 rounded-3xl">
             <div class="card px-4 lg:px-20">
-                <h1 class="text-3xl py-16 lg:pt-28">Find Us <span class="text-6xl text-[#179800] font-semibold">Here</span></h1>
-                <p class="text-sm lg:w-1/2 my-4 lg:my-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem soluta nisi recusandae impedit doloremque similique.</p>
+                <h1 class="text-3xl py-16 lg:pt-28">Find Us <span
+                        class="text-6xl text-[#179800] font-semibold">Here</span></h1>
+                <p class="text-sm lg:w-1/2 my-4 lg:my-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quidem soluta nisi recusandae impedit doloremque similique.</p>
                 <p class="font-bold lg:w-1/2 my-4 lg:my-10">Lorem ipsum dolor sit amet.</p>
                 <div class="space-x-4 mb-4 lg:mb-6">
-                    <button class="btn bg-[#179800] text-white"><i class="fa-solid fa-location-dot"></i> View Map</button>
+                    <button class="btn bg-[#179800] text-white"><i class="fa-solid fa-location-dot"></i> View
+                        Map</button>
                     <button class="btn"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</button>
                 </div>
                 <div class="stats shadow lg:w-4/5 mb-6">
@@ -318,7 +339,10 @@
                 </div>
             </div>
             <div class="lg:pr-32">
-                <iframe class="px-4 mx-auto my-4 lg:my-32 rounded-3xl max-w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.6135230694707!2d88.59915969369958!3d24.36550190456915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef959df5df87%3A0xfc4cc04b1eff3bab!2sSaheb%20Bazar%20Zero%20Point!5e0!3m2!1sen!2sbd!4v1738399246439!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="px-4 mx-auto my-4 lg:my-32 rounded-3xl max-w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.6135230694707!2d88.59915969369958!3d24.36550190456915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef959df5df87%3A0xfc4cc04b1eff3bab!2sSaheb%20Bazar%20Zero%20Point!5e0!3m2!1sen!2sbd!4v1738399246439!5m2!1sen!2sbd"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -326,7 +350,8 @@
     <!-- footer section -->
     <footer class="mt-96">
         <section class="relative bg-[#179800] pt-72 lg:pt-80 pb-32 space-y-16">
-            <div class="absolute p-4 lg:p-8 bottom-2/3 left-10 lg:bottom-2/3 lg:left-28 sm:flex sm:flex-col lg:flex-row lg:items-center lg:justify-center bg-stone-300 w-5/6 mx-auto rounded-2xl lg:space-x-32">
+            <div
+                class="absolute p-4 lg:p-8 bottom-2/3 left-8 lg:bottom-2/3 lg:left-28 sm:flex sm:flex-col lg:flex-row lg:items-center lg:justify-center bg-stone-300 w-5/6 mx-auto rounded-2xl lg:space-x-32">
                 <div>
                     <img src="c2-assets/vegetable-busket.png" alt="">
                 </div>
